@@ -9,8 +9,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="bg_edt_color1">#cedbe0</color>
     <color name="bg_edt_color2">#1e85aa</color>
+    <color name="bg_next_button">#136583</color>
+    <color name="error_text_color">#da4953</color>
     <color name="text_color_user_pass">#5c6467</color>
     <color name="text_color_login">#f5f9fb</color>
+    <color name="bg_gender_select">#54dd8b</color>
 
 
 
