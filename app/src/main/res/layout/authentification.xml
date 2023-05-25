@@ -2,21 +2,38 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_white"
+    >
 
 
 
-    <TextView
+    <Spinner
         android:id="@+id/lang_text_v"
-        android:layout_width="100dp"
+        android:layout_width="180dp"
         android:layout_height="40dp"
-        android:text="@string/lang"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         />
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/login_error"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lang_text_v"
+        android:gravity="center"
+        android:text="@string/email_username_or_password_incorrect"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/error_text_color"
+        android:layout_marginTop="180dp"
+        android:textStyle="bold|italic"
+        android:visibility="invisible"
+        />
     <EditText
         android:id="@+id/email_username_edt"
         android:layout_width="380dp"
@@ -31,25 +48,44 @@
         android:fontFamily="sans-serif-light"
         android:inputType="textEmailAddress"
         android:layout_marginTop="300dp"
+        android:layout_marginStart="25dp"
+        android:textCursorDrawable="@drawable/cursor_drawable"
+        android:saveEnabled="true"
         />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password_edt"
         android:layout_below="@id/email_username_edt"
         android:layout_width="380dp"
         android:layout_height="50dp"
-        android:hint="@string/password_hint"
-        android:gravity="center"
         android:background="@drawable/edit_text_rounded_corners"
-        android:textColor="@color/text_color_user_pass"
-        android:textStyle="bold"
-        android:textSize="20sp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:fontFamily="sans-serif-light"
-        android:inputType="textPassword"
-        android:layout_marginTop="15dp"
-        />
+        app:hintEnabled="false"
+        android:hint="@string/password_hint"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="20dp"
+        app:hintTextColor="@color/text_color_user_pass"
+        app:errorEnabled="true"
+        >
+
+        <EditText
+            android:id="@+id/password_edt2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_rounded_corners"
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            android:inputType="textPassword"
+            android:textColor="@color/text_color_user_pass"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:hint="@string/password_hint"
+            android:textCursorDrawable="@drawable/cursor_drawable"
+            android:saveEnabled="true"
+            android:paddingStart="60dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/login_txt_v"
@@ -65,7 +101,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:fontFamily="sans-serif-light"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:textAllCaps="false"
         tools:ignore="VisualLintButtonSize" />
 

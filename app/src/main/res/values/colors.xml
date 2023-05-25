@@ -14,6 +14,11 @@
     <color name="text_color_user_pass">#5c6467</color>
     <color name="text_color_login">#f5f9fb</color>
     <color name="bg_gender_select">#54dd8b</color>
+    <color name="navbar_color">#0c4d6b</color>
+    <color name="yellow_app">#debd21</color>
+    <color name="green_app">#2fd46d</color>
+    <color name="white_app">#fbfcfe</color>
+    <color name="header_shape_color">#2c2d2c</color>
 
 
 

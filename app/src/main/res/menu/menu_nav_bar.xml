@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_icon"
+        android:title="@string/home"
+        android:icon="@mipmap/home_icon_white_foreground"
+        android:iconTintMode="screen"
+        android:iconTint="@color/white_app"
+        >
+    </item>
+
+    <item
+        android:id="@+id/notification_icon"
+        android:title="@string/notifications"
+        android:icon="@mipmap/notification_icon_foreground"
+        android:iconTintMode="screen"
+        android:iconTint="@color/white_app"
+        >
+    </item>
+
+    <item
+        android:id="@+id/setting_icon"
+        android:title="@string/settings"
+        android:icon="@mipmap/setting_icon_foreground"
+        android:iconTintMode="screen"
+        android:iconTint="@color/white_app"
+        />
+</menu>

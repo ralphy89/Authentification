@@ -22,9 +22,9 @@ public class Create_account_password extends AppCompatActivity {
         Button next_btn = findViewById(R.id.next_button);
         EditText password_edt_1 = findViewById(R.id.password_edt);
         EditText password_edt_2 = findViewById(R.id.password2_edt);
-        Intent after_create_account_activity = new Intent(this,
-                After_create_account_activity.class);
-
+//        Intent after_create_account_activity = new Intent(this,
+//                After_create_account_activity.class);
+        Intent mainNavigation = new Intent(this, MainNavigation.class);
         Intent final_intent = getIntent();
 
 
@@ -44,23 +44,25 @@ public class Create_account_password extends AppCompatActivity {
 //                    draw_bg_btn.setColor(ContextCompat.getColor(this, R.color.bg_gender_select));
 //                    next_btn.setText("Submitted successfully!!");
 
-                    after_create_account_activity.putExtra("mobile_number",
+                    mainNavigation.putExtra("mobile_number",
                             final_intent.getStringExtra("mobile_number"));
 
-                    after_create_account_activity.putExtra("email",
+                    mainNavigation.putExtra("email",
                             final_intent.getStringExtra("email"));
 
-                    after_create_account_activity.putExtra("gender_value",
+                    mainNavigation.putExtra("gender_value",
                             final_intent.getStringExtra("gender_value"));
 
-                    after_create_account_activity.putExtra("first_name",
+                    mainNavigation.putExtra("first_name",
                             final_intent.getStringExtra("first_name"));
 
-                    after_create_account_activity.putExtra("last_name",
+                    mainNavigation.putExtra("last_name",
                             final_intent.getStringExtra("last_name"));
 
-                    after_create_account_activity.putExtra("birthday_date",
+                    mainNavigation.putExtra("birthday_date",
                             final_intent.getStringExtra("birthday_date"));
+
+                    startActivity(mainNavigation);
 
                 }
             }

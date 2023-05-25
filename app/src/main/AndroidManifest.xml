@@ -12,6 +12,9 @@
         android:theme="@style/AppTheme.NoDarkMode"
         tools:targetApi="31">
         <activity
+            android:name=".MainNavigation"
+            android:exported="false" />
+        <activity
             android:name=".After_create_account_activity"
             android:exported="false" />
         <activity

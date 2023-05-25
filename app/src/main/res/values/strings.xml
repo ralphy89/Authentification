@@ -29,4 +29,16 @@
     <string name="confirm_password">Confirm password</string>
     <string name="arrow">arrow</string>
     <string name="password_nb">- Create a password with at leat 8 letters or numbers -\n- it should be something others can\'t guest -</string>
+    <string name="email_username_or_password_incorrect">Email, Username or Password incorrect</string>
+    <string name="navigation_bar">Navigation bar</string>
+    <string name="notifications">Notifications</string>
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username">Rock Yoah Sanon</string>
+    <string name="client_id">Client id : 102590</string>
+    <string name="chat_bubble_for_messaging_service">Chat bubble for Messaging service</string>
+    <string name="notification_fragment">Notification Fragment</string>
+    <string name="setting_fragment">Setting Fragment</string>
 </resources>
