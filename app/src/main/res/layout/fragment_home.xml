@@ -7,20 +7,54 @@
     tools:ignore="ExtraText">
 
     <FrameLayout
+        android:id = "@+id/btn_framelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="400dp"
+        android:background="@color/white_app"
+        >
+
+        <Button
+            android:id = "@+id/cashout_btn"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="180dp"
+            android:background="@drawable/cashout_btn"
+            android:backgroundTintMode="screen"
+            android:contentDescription="@string/cashout_button"
+            />
+
+        <Button
+            android:id = "@+id/transfer_btn"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="180dp"
+            android:background="@drawable/transfer_btn"
+            android:backgroundTintMode="screen"
+            android:contentDescription="@string/transfer_button"
+
+            />
+    </FrameLayout>
+
+    <FrameLayout
         android:id="@+id/home_frame_layout"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="250dp"
         android:background="@color/header_shape_color"
         android:clipToPadding="true"
         android:layout_gravity="center_horizontal"
-        tools:ignore="UselessParent">
+        tools:ignore="UselessParent"
+        >
 
 
         <ImageView
             android:id="@+id/chat_bubble"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:background="@mipmap/chat_bubble_icon_foreground"
+            android:src="@mipmap/chat_bubble_icon_foreground"
             android:layout_marginTop="20dp"
             android:layout_marginStart="350dp"
             android:tintMode="add"
@@ -46,8 +80,6 @@
                         android:background="@drawable/header_shape"
                         android:src="@mipmap/user_avatar_foreground"
                         />
-
-
                 </FrameLayout>
 
                     <TextView
@@ -92,8 +124,57 @@
                     android:src="@mipmap/qrcode_image_foreground"
                     android:outlineSpotShadowColor="@color/yellow_app"
                     />
-
             </FrameLayout>
         </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/available_shape_framelayout"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@drawable/circle_balance_icon"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"
+        >
+
+        <TextView
+            android:id = "@+id/balance_sum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="$ 666.00 HT"
+            android:textColor="@color/white_app"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:layout_marginTop="80dp"
+            />
+
+        <TextView
+            android:id="@+id/available_balance_txt_v"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/yellow_app"
+            android:text="@string/available_balance"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            />
+
+        <ProgressBar
+            android:layout_width="250dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:progressDrawable="@drawable/rectangular_progress_bar"
+            android:max="1000"
+            android:progress="500"
+            android:indeterminate="false"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+
+            />
+
+    </FrameLayout>
+
+
 
 </FrameLayout>

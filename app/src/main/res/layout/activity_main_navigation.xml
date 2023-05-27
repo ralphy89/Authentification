@@ -7,15 +7,17 @@
     tools:context=".MainNavigation">
 
 
-    <FrameLayout
+    <RelativeLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="visible"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-
+        android:layout_centerInParent="true"
+        android:clipToPadding="true"
         />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_view"
         android:layout_width="match_parent"

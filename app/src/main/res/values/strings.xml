@@ -41,4 +41,7 @@
     <string name="chat_bubble_for_messaging_service">Chat bubble for Messaging service</string>
     <string name="notification_fragment">Notification Fragment</string>
     <string name="setting_fragment">Setting Fragment</string>
+    <string name="available_balance">Available balance :</string>
+    <string name="cashout_button">Cashout button</string>
+    <string name="transfer_button">Transfer button</string>
 </resources>

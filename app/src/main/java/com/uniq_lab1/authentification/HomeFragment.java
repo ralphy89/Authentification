@@ -12,6 +12,10 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
+import Design.Design;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link HomeFragment#newInstance} factory method to
@@ -25,7 +29,7 @@ public class HomeFragment extends Fragment {
     private static final String ARG_PARAM2 = "param2";
 
     // TODO: Rename and change types of parameters
-    private static String first_name = "Ralphy";
+    private static String first_name;
     private String mParam2;
 
 
@@ -65,13 +69,16 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         // Inflate the layout for this fragment
         View rootView =  inflater.inflate(R.layout.fragment_home, container, false);
-
         TextView name = rootView.findViewById(R.id.username_txt_v);
-
-        name.setText(first_name);
+        TextView balance = rootView.findViewById(R.id.balance_sum);
+        Design design = new Design();
+        Design.changeTextColor(balance, R.color.green_app, R.color.yellow_app);
+        if(first_name != null)
+            name.setText(first_name);
+        else
+            name.setText("Rock Yoah Sanon");
         return rootView;
     }
 }
