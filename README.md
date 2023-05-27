@@ -1,5 +1,4 @@
 "# Authentification App" 
 
 "# Home Screenshot"
-
-![Alt Text](Screenshot_Home.png)
+<img src="Screenshot_Home.png" alt="Alt Text" width="300">
